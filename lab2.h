@@ -8,11 +8,8 @@
  * provided to the worker threads
 */
 typedef struct {
-    int id;
-    int starting_row;
-    int starting_col;
-    int ending_row;
-    int ending_col;
+    int row;
+    int column;
 } param_struct;
 
 int** sudoku_board; // this board is shared by the threads
